@@ -51,7 +51,7 @@ __prompt_iggy_git_dirty_fg=252 # d0d0d0
 __prompt_iggy_git_stashed_fg=16 # 000000
 __prompt_iggy_git_stashed_bg=178 # d7af00
 
-__prompt_iggy_git_project_pwd_fg=241 # 626262
+__prompt_iggy_git_project_pwd_fg=15 # 626262
 __prompt_iggy_git_project_pwd_bg=235 # 262626
 
 __prompt_iggy_path_segment_writable_bg=32 # 0087d7
