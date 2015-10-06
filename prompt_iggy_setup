@@ -39,13 +39,13 @@ __prompt_iggy_user_bg=16 # 000000
 __prompt_iggy_status_fg=16 # 000000
 __prompt_iggy_status_bg=235 # 767676
 
-__prompt_iggy_git_ok_bg=40 # 00d700
-__prompt_iggy_git_ok_fg=16 # 000000
+__prompt_iggy_git_ok_bg=22 # 00d700
+__prompt_iggy_git_ok_fg=15 # 000000
 
 __prompt_iggy_cwd_not_writable_fg=174 # d78787
 __prompt_iggy_cwd_not_writable_bg=$__prompt_iggy_med_red
 
-__prompt_iggy_git_dirty_bg=088 # 870000
+__prompt_iggy_git_dirty_bg=52 # 870000
 __prompt_iggy_git_dirty_fg=252 # d0d0d0
 
 __prompt_iggy_git_stashed_fg=16 # 000000
@@ -54,7 +54,7 @@ __prompt_iggy_git_stashed_bg=178 # d7af00
 __prompt_iggy_git_project_pwd_fg=15 # 626262
 __prompt_iggy_git_project_pwd_bg=235 # 262626
 
-__prompt_iggy_path_segment_writable_bg=18 # 0087d7
+__prompt_iggy_path_segment_writable_bg=20 # 0087d7
 __prompt_iggy_path_segment_writable_fg=245 # 121212
 __prompt_iggy_path_segment_writable_fgh=15 # 000000
 
