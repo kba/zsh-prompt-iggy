@@ -54,9 +54,9 @@ __prompt_iggy_git_stashed_bg=178 # d7af00
 __prompt_iggy_git_project_pwd_fg=15 # 626262
 __prompt_iggy_git_project_pwd_bg=235 # 262626
 
-__prompt_iggy_path_segment_writable_bg=32 # 0087d7
-__prompt_iggy_path_segment_writable_fg=233 # 121212
-__prompt_iggy_path_segment_writable_fgh=16 # 000000
+__prompt_iggy_path_segment_writable_bg=18 # 0087d7
+__prompt_iggy_path_segment_writable_fg=245 # 121212
+__prompt_iggy_path_segment_writable_fgh=15 # 000000
 
 __prompt_iggy_path_segment_not_writable_bg=52 # 5f0000
 __prompt_iggy_path_segment_not_writable_fg=217 # ffafaf
