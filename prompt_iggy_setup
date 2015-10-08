@@ -168,7 +168,8 @@ prompt_iggy_setup() {
   _cursorBack=$'\e[1D'
 
   # Define prompts.
-  RPROMPT='%{${_cursorUp}%}$(_clr $__prompt_iggy_date_fg)[$(date)]$(_clr reset)%{${_cursorDown}%}%{%f%b%k%}'
+  _nohist=""
+  RPROMPT='%{${_cursorUp}%}$(_clr $__prompt_iggy_date_fg)[$(date)]$(_clr reset)$([[ -z $HISTFILE ]] && echo " NOHIST")%{${_cursorDown}%}%{%f%b%k%}'
   PROMPT='%{%f%b%k%}
 $(segments)
 $(prompt_iggy_prompt_sym) %{%f%b%k%}'
