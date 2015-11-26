@@ -22,7 +22,7 @@
 pmodload 'helper'
 
 # Colors
-__prompt_iggy_date_fg=238 # 444444
+__prompt_iggy_date_fg=33 # 444444
 __prompt_iggy_med_red=160 # d70000
 __prompt_iggy_slate_blue=24 # 005f87
 
@@ -169,7 +169,9 @@ prompt_iggy_setup() {
 
   # Define prompts.
   _nohist=""
-  RPROMPT='%{${_cursorUp}%}$(_clr $__prompt_iggy_date_fg)[$(date)]$(_clr reset)$([[ -z $HISTFILE ]] && echo " NOHIST")%{${_cursorDown}%}%{%f%b%k%}'
+  # DISTRO=$(sed -n 's/^PRETTY_NAME="\([^"]*\)"\?/\1/p' /etc/*-release)
+  DISTRO=$(sed -n 's/^ID="\?\([^"]*\)"\?/\1/p' /etc/*-release)
+  RPROMPT='%{${_cursorUp}%}[$(_clr $__prompt_iggy_bg_user_hostname_fg)$DISTRO$(_clr reset)]$(_clr $__prompt_iggy_date_fg)[$(date "+%Y-%m-%d %H:%M:%S")]$(_clr reset)$([[ -z $HISTFILE ]] && echo " NOHIST")%{${_cursorDown}%}%{%f%b%k%}'
   PROMPT='%{%f%b%k%}
 $(segments)
 $(prompt_iggy_prompt_sym) %{%f%b%k%}'
